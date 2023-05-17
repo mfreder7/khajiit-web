@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Khajiit Bot - Discord Price Comparison Bot</title>
     <meta
       name="description"
-      content="Khajiit Bot is a Discord bot that compares game prices on G2A and Steam. Use '!game name of game' to get a price comparison."
+      content="Khajiit Bot is a Discord bot that compares game prices on G2A and Steam. Use '/game <name of game>' to get a price comparison."
     />
     <meta
       name="keywords"
@@ -18,95 +20,123 @@
         background-color: #2c2f33; /* dark theme */
         margin: 0;
         padding: 0;
+        line-height: 1.5;
+        position: relative; /* add this for positioning the floating button */
       }
+
       .header {
         text-align: center;
         padding: 20px;
         background-color: #2c2f33; /* same as body background */
       }
-      .logo {
-        border-radius: 50%; /* round the logo */
+
+      .header img {
+        max-width: 200px;
+        border-radius: 10px; /* rounded corners for the logo */
       }
-      .gif-demo {
-        border-radius: 10%; /* slightly round corners of the gif */
-      }
+
       .content {
         margin: 0 auto;
         max-width: 960px; /* limit width for large screens */
         padding: 20px;
       }
+
       h1,
       h2 {
         color: #7289da; /* discord purple */
       }
+
       iframe {
         display: block;
+        margin: 0 auto;
+      }
+
+      .bot-img {
+        display: block;
+        margin: 20px auto;
+        border-radius: 10px; /* rounded corners for the bot in action gif */
+      }
+
+      .floating-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+        background-color: #7289da;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+
+      .floating-button:hover {
+        background-color: #5468a7;
       }
     </style>
   </head>
   <body>
     <header class="header">
       <h1>Khajiit Bot</h1>
-      <img
-        class="logo"
-        src="https://i.imgur.com/ZJCKkPt.png"
-        alt="Khajiit Bot Logo"
-      />
+      <img src="https://i.imgur.com/ZJCKkPt.png" alt="Khajiit Bot Logo" />
     </header>
+
     <main class="content">
       <section>
         <h2>About</h2>
         <p>Khajiit has wares, if you have coin...</p>
         <p>
-          Khajiit searches G2A and Steam, then compares the prices and returns a
-          embedded message with links to both and a price comparison. Use "/game
-          name of game" to search.
+          Khajiit searches G2A and Steam, then compares the prices and returns
+          an embedded message with links to both and a price comparison. Use
+          '/game &lt;name of game&gt;' to search.
         </p>
         <p>
-          Currently Khajiit only responds with Global & North American results
-          in USD $.
+          Currently Khajiit only responds with Global &amp; North American
+          results in USD $.
         </p>
       </section>
+
       <section>
         <h2>Command</h2>
-        <p>/game name of game</p>
+        <p>/game &lt;name of game&gt;</p>
       </section>
+
       <section>
         <h2>Response Links</h2>
         <ul>
           <li>Main result.</li>
           <li>Search results.</li>
-          <li>G2A purchase link & price</li>
-          <li>Steam purchase link & price (if available)</li>
+          <li>G2A purchase link &amp; price</li>
+          <li>Steam purchase link &amp; price (if available)</li>
           <li>Discount % between the two</li>
         </ul>
       </section>
+
       <section>
         <h2>Bot in Action</h2>
         <img
-          class="gif-demo"
+          class="bot-img"
           src="https://i.imgur.com/oLBLtPj.gif"
           alt="Khajiit Bot in action"
         />
-        <!-- disclaim that the command has changed to /game name of game instead of !game name of game-->
-        <p>
-          <em
-            >Note: The command has changed to /game name of game instead of
-            !game name of game</em
-          >
-        </p>
-      </section>
-      <section>
-        <h2>Join our Discord Server</h2>
-        <iframe
-          src="https://discord.com/widget?id=709868384795361310&theme=dark"
-          width="350"
-          height="500"
-          allowtransparency="true"
-          frameborder="0"
-          sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
-        ></iframe>
       </section>
     </main>
+
+    <footer>
+      <h2>Join our Discord Server</h2>
+      <iframe
+        src="https://discord.com/widget?id=709868384795361310&theme=dark"
+        width="350"
+        height="500"
+        allowtransparency="true"
+        frameborder="0"
+        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+      ></iframe>
+    </footer>
+
+    <a
+      href="https://discord.com/oauth2/authorize?client_id=696797425502781470&permissions=92224&scope=bot"
+      class="floating-button"
+      >Add Bot</a
+    >
   </body>
 </html>
