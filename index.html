@@ -28,7 +28,12 @@
         ); /* gradient background */
         cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="transform: rotate(250deg);"><text x="0" y="20" font-size="24">👉</text></svg>')
             5 5,
-          auto;
+          pointer !important;
+      }
+      html {
+        cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="transform: rotate(250deg);"><text x="0" y="20" font-size="24">👉</text></svg>')
+            5 5,
+          pointer;
       }
 
       .header {
@@ -88,9 +93,6 @@
         padding: 10px 20px;
         border-radius: 5px;
         text-decoration: none;
-        cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35"><text x="0" y="20" font-size="24">🙌</text></svg>')
-            5 5,
-          pointer;
       }
 
       .floating-button:hover {
@@ -109,9 +111,6 @@
 
       .top-button:hover {
         background-color: #5468a7;
-        cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35"><text x="0" y="20" font-size="24">🙌</text></svg>')
-            5 5,
-          pointer;
       }
 
       section {
@@ -151,6 +150,13 @@
       ::-webkit-scrollbar-thumb:active {
         background: #3c4b89;
       }
+
+      .floating-button:hover,
+      .top-button:hover {
+        cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35"><text x="0" y="20" font-size="24">🙌</text></svg>')
+            5 5,
+          pointer;
+      }
     </style>
   </head>
   <body>
@@ -161,7 +167,6 @@
         "floating-chat.donateButton.text": "Buy me a kofi.",
         "floating-chat.donateButton.background-color": "#794bc4",
         "floating-chat.donateButton.text-color": "#fff",
-        //
       });
     </script>
     <header class="header">
