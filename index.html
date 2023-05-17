@@ -26,15 +26,23 @@
           #2c2f33,
           #3b3e42
         ); /* gradient background */
+      }
+
+      /* Override the default cursor for the entire page */
+      body,
+      a,
+      button,
+      div,
+      html {
         cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="transform: rotate(250deg);"><text x="0" y="20" font-size="24">👉</text></svg>')
             5 5,
           pointer !important;
       }
-      html,
-      div {
+
+      a:hover {
         cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="transform: rotate(250deg);"><text x="0" y="20" font-size="24">👉</text></svg>')
             5 5,
-          pointer;
+          pointer !important;
       }
 
       .header {
@@ -94,9 +102,6 @@
         padding: 10px 20px;
         border-radius: 5px;
         text-decoration: none;
-        cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35"><text x="0" y="20" font-size="24">🙌</text></svg>')
-            5 5,
-          pointer !important;
       }
 
       .floating-button:hover {
@@ -160,11 +165,6 @@
         cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35"><text x="0" y="20" font-size="24">🙌</text></svg>')
             5 5,
           pointer;
-      }
-      a {
-        cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35"><text x="0" y="20" font-size="24">🙌</text></svg>')
-            5 5,
-          pointer !important;
       }
     </style>
   </head>
