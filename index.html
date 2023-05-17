@@ -38,7 +38,7 @@
       .content {
         margin: 0 auto;
         max-width: 960px; /* limit width for large screens */
-        padding: 20px;
+        padding: 10px;
       }
 
       h1,
@@ -72,15 +72,45 @@
       .floating-button:hover {
         background-color: #5468a7;
       }
+
+      .top-button {
+        background-color: #7289da;
+        color: #fff;
+        margin: 20px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        line-height: 4;
+
+        text-decoration: none;
+      }
+
+      .top-button:hover {
+        background-color: #5468a7;
+      }
     </style>
   </head>
   <body>
     <header class="header">
       <h1>Khajiit Bot</h1>
       <img src="https://i.imgur.com/ZJCKkPt.png" alt="Khajiit Bot Logo" />
+      <div>
+        <a
+          href="https://discord.com/oauth2/authorize?client_id=696797425502781470&permissions=92224&scope=bot"
+          class="top-button"
+          >Add Khajiit to your server!</a
+        >
+      </div>
     </header>
 
     <main class="content">
+      <section>
+        <h2 style="text-align: center">Bot in Action</h2>
+        <img
+          class="bot-img"
+          src="https://i.imgur.com/oLBLtPj.gif"
+          alt="Khajiit Bot in action"
+        />
+      </section>
       <section>
         <h2>About</h2>
         <p>Khajiit has wares, if you have coin...</p>
@@ -110,19 +140,10 @@
           <li>Discount % between the two</li>
         </ul>
       </section>
-
-      <section>
-        <h2>Bot in Action</h2>
-        <img
-          class="bot-img"
-          src="https://i.imgur.com/oLBLtPj.gif"
-          alt="Khajiit Bot in action"
-        />
-      </section>
     </main>
 
-    <footer>
-      <h2>Join our Discord Server</h2>
+    <footer class="content">
+      <h2 style="text-align: center">Join our Discord Server</h2>
       <iframe
         src="https://discord.com/widget?id=709868384795361310&theme=dark"
         width="350"
