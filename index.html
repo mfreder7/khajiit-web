@@ -20,12 +20,8 @@
         margin: 0;
         padding: 0;
         line-height: 1.5;
-        position: relative; /* add this for positioning the floating button */
-        background: linear-gradient(
-          to bottom,
-          #2c2f33,
-          #3b3e42
-        ); /* gradient background */
+        position: relative;
+        background: linear-gradient(to bottom, #2c2f33, #3b3e42);
       }
 
       /* Override the default cursor for the entire page */
@@ -57,12 +53,12 @@
 
       .header img {
         max-width: 200px;
-        border-radius: 10px; /* rounded corners for the logo */
+        border-radius: 10px;
       }
 
       .content {
         margin: 0 auto;
-        max-width: 960px; /* limit width for large screens */
+        max-width: 960px;
         padding: 10px;
       }
 
@@ -70,7 +66,7 @@
       h2 {
         font-family: "Whitney SSm A", "Whitney SSm B", sans-serif;
         font-weight: 500;
-        color: #fff; /* white font color */
+        color: #fff;
       }
 
       p,
@@ -78,7 +74,7 @@
       ul {
         font-family: "Whitney SSm A", "Whitney SSm B", sans-serif;
         font-size: 16px;
-        color: #fff; /* white font color */
+        color: #fff;
       }
 
       iframe {
@@ -89,7 +85,7 @@
       .bot-img {
         display: block;
         margin: 20px auto;
-        border-radius: 10px; /* rounded corners for the bot in action gif */
+        border-radius: 10px;
       }
 
       .floating-button {
@@ -130,7 +126,7 @@
           to bottom,
           rgba(114, 137, 218, 0.2),
           rgba(95, 123, 199, 0.2)
-        ); /* gradient background for sections */
+        );
       }
 
       section:first-child {
@@ -165,6 +161,44 @@
         cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35"><text x="0" y="20" font-size="24">🙌</text></svg>')
             5 5,
           pointer;
+      }
+
+      /* Mobile Styles */
+      @media (max-width: 767px) {
+        body,
+        html {
+          width: 100%;
+        }
+
+        .header img {
+          max-width: 100%;
+        }
+
+        .content {
+          padding: 5px;
+        }
+
+        iframe {
+          max-width: 100%;
+        }
+
+        .bot-img {
+          max-width: 100%;
+        }
+
+        .floating-button {
+          bottom: 10px;
+          right: 10px;
+          padding: 5px 10px;
+          font-size: 12px;
+        }
+
+        .top-button {
+          margin: 10px;
+          padding: 5px 10px;
+          font-size: 12px;
+          line-height: 2;
+        }
       }
     </style>
   </head>
