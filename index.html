@@ -201,17 +201,22 @@
         }
       }
     </style>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-860376841"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-860376841");
+    </script>
   </head>
   <body>
-    <script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
-    <script>
-      kofiWidgetOverlay.draw("welovethis", {
-        type: "floating-chat",
-        "floating-chat.donateButton.text": "Buy me a kofi.",
-        "floating-chat.donateButton.background-color": "#794bc4",
-        "floating-chat.donateButton.text-color": "#fff",
-      });
-    </script>
     <header class="header">
       <h1>Khajiit Bot</h1>
       <img src="https://i.imgur.com/ZJCKkPt.png" alt="Khajiit Bot Logo" />
@@ -285,5 +290,20 @@
       class="floating-button"
       >Invite Khajiit</a
     >
+    <script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
+    <script>
+      kofiWidgetOverlay.draw("welovethis", {
+        type: "floating-chat",
+        "floating-chat.donateButton.text": "Buy me a kofi.",
+        "floating-chat.donateButton.background-color": "#794bc4",
+        "floating-chat.donateButton.text-color": "#fff",
+      });
+    </script>
+    <!-- Event snippet for Website traffic conversion page -->
+    <script>
+      gtag("event", "conversion", {
+        send_to: "AW-860376841/CS8xCPSa_qAYEImeoZoD",
+      });
+    </script>
   </body>
 </html>
